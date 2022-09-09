@@ -31,7 +31,7 @@ Finally run the command by providing the 2 json files as parameters:
 pdm r2d2 config/millennium-falcon.json config/empire.json
 ```
 
-**Note:** there are 2 examples file in the *config* directory.
+**Note:** there are 2 examples file in the *examples* directory.
 
 ## Git branching model and workflow
 
