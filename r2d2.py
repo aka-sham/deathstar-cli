@@ -30,8 +30,8 @@ def ask_computer(millenium_falcon_settings: str, empire_settings: str):
     the targeted planet from the Death Star.
 
     Args:
-        millenium_falcon_settings (_type_): Filepath to Millenium Falcon settings which describes, for instance, the targeted planet.
-        empire_settings (_type_): Filepath to Empire settings which describes the countdown and the future location of bounty hunters.
+        millenium_falcon_settings (str): Filepath to Millenium Falcon settings which describes, for instance, the targeted planet.
+        empire_settings (str): Filepath to Empire settings which describes the countdown and the future location of bounty hunters.
 
     Returns:
         float: probability to save the targeted planet from the Death Star.

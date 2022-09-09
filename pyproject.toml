@@ -29,4 +29,4 @@
     ]
 
 [tool.pdm.scripts]
-    r2d2 = { call = "r2d2:main" }
+    r2d2 = "python r2d2.py"
