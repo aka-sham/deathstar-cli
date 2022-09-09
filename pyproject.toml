@@ -1,7 +1,7 @@
 [project]
     name = "giskard-deathstart-cli"
     description = "CLI of Death Star developer test aka R2D2."
-    version = "1.0"
+    version = "1.0.0"
     authors = [
         { name = "Sébastien Metzger", email = "sebastien.metzger@nomogi.org" },
     ]
