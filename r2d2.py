@@ -20,6 +20,7 @@ from requests import ConnectionError
 from pathlib import Path
 from pydantic import BaseModel
 from pydantic import BaseSettings
+from pydantic.env_settings import SettingsSourceCallable
 
 from yaspin import yaspin
 from yaspin.spinners import Spinners
@@ -38,6 +39,15 @@ class Settings(BaseSettings):
 
         env_file = ".env"
         env_file_encoding = "utf-8"
+
+        @classmethod
+        def customise_sources(
+            cls,
+            init_settings: SettingsSourceCallable,
+            env_settings: SettingsSourceCallable,
+            file_secret_settings: SettingsSourceCallable,
+        ) -> tuple[SettingsSourceCallable, ...]:
+            return env_settings, init_settings, file_secret_settings
 
     def _get_exe_dir(self):
         """Gets Executable directory."""
